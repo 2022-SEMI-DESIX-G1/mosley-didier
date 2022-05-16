@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,800;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <img class="img" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="" srcset="">
+    <div class="container">
+        <section class="box">
+            <h1>Buscador de Pokemones</h1>
+            <label for="">Busca desde pokemones hasta las habilidades de los mismos.</label>
+            <form id="pokemon-finder-form">
+                <div class="inputs ">
+                    <div class="input">
+                        <label for="">Nombre:</label>
+                        <input id="pokemon-finder-query" type="text">
+                    </div>
+                    <div class="space"></div>
+                    <div class="input">
+                        <label for="">Tipo de búsqueda</label>
+                        <select id="pokemon-finder-search-type">
+                            <option value="pokemon">pokemon</option>
+                            <option value="ability">ability</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button type="" class="btn" id="clean">Limpiar</button>
+                    <button type="submit" class="btn">Buscar</button>
+                </div>
+            </form>
+        </section>
+        <section id="pokemon-finder-response" class="resp"></section>
+    </div>
+    
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

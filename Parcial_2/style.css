@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #031926;
+}
+
+.container{
+    min-height: 100vh;
+}
+
+.box{
+    height: 210px;
+    width: 70vw;
+    max-width: 530px;
+    /* max-width: 250px; */
+    background: #fff;
+    color:#1d1d1d;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 25px;
+    /* padding-top: 70px; */
+    border-radius: 5px;
+}
+
+.box h1{
+    font-size: 24px;
+}
+
+.box label{
+    font-size: 12px;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+   position: absolute;
+   top:30px;
+   right: 0;
+   left: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.inputs{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr .05fr 1fr;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input input, .input select{
+    position: relative;
+    background: #E8E8E8;
+    border: none;
+    font-size:1rem;
+    padding: 7px;
+    border-radius: 5px;
+    width:100%;
+    /* margin:5px; */
+}
+
+.input label{
+    font-weight: 700; 
+    font-size: 12px;
+}
+
+.btn{
+    width:108px;
+    height: 27px;
+    /* font-size: 1.5rem; */
+    border: none;
+    border-radius: 5px;
+    background-color: #19A5F8;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    /* padding: .7rem; */
+    transition: background-color .3s;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+
+.btn:hover{
+    background-color: #002fff;
+    cursor: pointer;
+}
+
+.card2{
+    width: 70vw;
+    max-width: 530px;
+    /* height: 210px; */
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.name::first-letter{
+    text-transform: uppercase;
+}
+
+.parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.child{
+    font-size: 12px;
+}
+
+.child ul{
+    padding-left: 30px;
+}
+
+.err{
+    /* height: 210px; */
+    width: 70vw;
+    max-width: 530px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    font-size: 21px;
+    padding: 5px 0;
+}
