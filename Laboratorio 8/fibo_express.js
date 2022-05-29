@@ -19,7 +19,7 @@ function fibonacci(num){
 
 
 app.get('/', function (req, res) {
-    res.send("Test")
+    res.send(fibonacci(numb))
 })
 
 app.post('/array', function (req, res){
