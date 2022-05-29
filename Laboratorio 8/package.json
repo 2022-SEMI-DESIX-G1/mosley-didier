@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "name": "lab8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "dStart": "nodemon fibo_express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
