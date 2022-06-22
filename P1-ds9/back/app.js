@@ -38,6 +38,35 @@ app.post("/pokemon/:name", async function (req, res) {
   res.json({ name, data: responseData, isCached: false });
 });
 
+app.get("/pokemon/:id", async function(req, res){
+  const id = req.params.id;
+  const urlSpecies = `https://pokeapi.co/api/v2/pokemon-species/${id}`;
+  const urlEncounters = `https://pokeapi.co/api/v2/pokemon/${id}/encounters`;
+  let lugarArray = [];
+  let lugaresPokemones = await axios(urlEncounters);
+  lugaresPokemones.data.forEach(data =>lugarArray.push(data.location_area.name));
+
+  const especies = await axios(urlSpecies);
+  const evolucion = await axios(especies.data.evolution_chain.url);
+  let evolutions = getEvolutionResponse(evolucion.data.chain);
+
+  const evolutionList= evolutions.map(({species})=>
+  `${species.name}`
+  );    
+
+  function getEvolutionResponse(evolutions) {
+    let evolutionChain = [evolutions];
+    while (evolutions.evolves_to.length > 0) { 
+        for(let i=0; i<evolutions.evolves_to.length; i++){
+            evolutionChain.push(evolutions.evolves_to[i]);
+        }
+        evolutions = evolutions.evolves_to[0];
+    }
+    return evolutionChain;
+}
+res.json({ evol:evolutionList, lug: lugarArray });
+});
+
 app.listen(PORT, () => {
   console.log(`Running on port ${PORT}...`);
 });
