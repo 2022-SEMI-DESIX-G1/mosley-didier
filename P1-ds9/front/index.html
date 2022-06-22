@@ -25,13 +25,16 @@
       <img class="img" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="" srcset="">
       <form class="pokemon-form" action="">
         <div class="chidren flex">
-            <label for="pokemon-input"class="item">Name:</label>
+            <label for="pokemon-input"class="item">Nombre:</label>
             <div class="checkbox">
-              <input type="checkbox" name="Sprites" id="Sprites" class="item"/>
+              <input type="checkbox" name="Sprites" id="sprites" class="item"/>
               <label for="Sprites">Sprites</label>
-              <input type="checkbox" name="Ubicación" id="Ubicación" class="item"/>
+
+              <input type="checkbox" name="Ubicación" id="ubicacion" class="item"/>
               <label for="Ubicación">Ubicación</label>
-              <label></label><input type="checkbox" name="Cadena de evolución" id="" class="item">Cadena de evolución</input></label><br>
+
+              <input type="checkbox" name="chain" id="chain" class="item"/>
+              <label for="chain">Cadena de evolución</label><br>
             </div>
         </div>
         <div class="chidren grd">
@@ -42,13 +45,17 @@
       </form>
     </main>
 
-    <div class="results">
+    <div id="results-cont"></div>
+    
+    <!-- <div class="results">
       <h2>Name</h2>
-      <div class="card"><p>Generales</p></div>
+      <div class="card">
+        <p>Generales</p>
+      </div>
       <div class="card"><p>Sprites</p></div>
       <div class="card"><p>Ubicación</p></div>
       <div class="card"><p>Cadena</p></div>
-    </div>
+    </div> -->
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
