@@ -1,0 +1,245 @@
+:root{
+  --gradient: linear-gradient(165deg, rgba(158,31,8,0.7) 50%, rgba(238,131,10,0.7) 82%, #ffea00b3 100%);
+  --gr2: linear-gradient(to top,#eb144cff, #ff6900ff);
+  --gr3: linear-gradient(175deg, rgba(158,31,8,0.7) 50%, rgba(88, 5, 12, 0.7) 82%, #0a0a0a63 100%);
+  
+  --bg-img: url("https://brand.issworld.com/m/18472c52e921491e/Web_Desktop-Young-businesspeople-laughing-together-during-their-office-coffe.jpg");
+  --bg-img2: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlb3BsZSUyMGluJTIwb2ZmaWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  --icon: url('../icons/talking.png');
+  --bg-img3: url('https://www.zdnet.com/a/img/resize/ebc9be88d6bd0153d92b7c6111f848884f852e12/2019/08/19/4a663776-f4a9-4f89-9bee-2d07ee052f5b/istock-1147195672-11.jpg?width=1200&height=900&fit=crop&auto=webp');
+  --bg-img4: url('https://a.storyblok.com/f/159374/1920x1280/0301255ffb/typing-on-mac.jpg');
+  --bg-img5: url('https://fraservalleycontinuingeducation.ca/wp-content/uploads/2019/07/connection-desk-device-1260292.jpg');
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Modo oscuro segun tema del dispositivo */
+ /* @media(prefers-color-scheme: dark){
+  :root{
+    --bg-color: #191919;
+    --color-text:#f7f7f7;
+  }
+ }
+
+ @media(prefers-color-scheme: light){
+  :root{
+    --bg-color:#fff;
+    --color-text:#191919;
+  }
+ }
+
+ body{
+  background-color:var(--bg-color);
+  color:var(--color-text);
+ } */
+
+.cont-bg{
+  background: rgb(158,31,8);
+  background:var(--gradient), var(--bg-img);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  background-position:center;
+}
+
+.cont-bg2{
+  background: rgb(158,31,8);
+  background:var(--gradient), var(--bg-img2);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  background-position:center;
+}
+
+.fill-bg{
+  background-position: center;
+  background-size: cover;
+}
+
+.marco{
+  outline: 1px solid black;
+}
+
+.img-perfil{
+  border-radius:50%;
+  object-fit: contain;
+}
+
+.gr-text{
+  text-transform: uppercase;
+	background: linear-gradient(to right, #e62603cc 0%, #ffbb00b3 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* font-size: 20vw; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: bolder;
+}
+
+.main-info{
+  height: 50vh;
+}
+
+.perfildown .dropdown-toggle::after {
+  display: none !important; 
+}
+
+.cat-cont{
+  width: 19rem;
+  height: 10rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background-position:center;
+  transition: transform .3s;
+}
+
+.cat-cont:hover{
+  transform: scale(1.2);
+}
+
+.mini-cont{
+  background:rgba(0, 0, 0, 0.4);
+  height:100%;
+}
+
+.main-nav{
+  color:#fff;
+}
+
+.social-media a{
+  background: #e62603cc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.s-card{
+  background:#1b1b1b;
+  min-height: 10rem;
+  color:#fff;
+  transition: all .2s;
+}
+
+.s-card a{
+  color: #fff;
+  transition: color .2s;
+}
+
+.s-card a:hover{
+  color: #1b1b1b;
+}
+
+.s-card:hover{
+  background:#fff;
+  color:#1b1b1b;
+  /* cursor: pointer; */
+}
+
+.presentation{
+  min-height: 57vh;
+}
+
+.carousel{
+  width:75%;
+}
+
+.col{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.gr-bg{
+  background:var(--gr2);
+}
+
+.icon{
+  background: var(--icon);
+}
+
+
+.formulario{
+  height: 100vh;
+  overflow:hidden;
+}
+
+.portada{
+  background:var(--gr3),var(--bg-img3);
+}
+
+.portada2{
+  background:var(--gr3),var(--bg-img4);
+}
+
+.portada3{
+  background:var(--gr3),var(--bg-img5);
+}
+
+.portada, .portada2, .portada3{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.formu-container{
+  background:#fff;
+  width: 70%;
+}
+
+.p-5 .btn{
+  background:#ff5e00 !important;
+}
+
+.form-control{
+  background-color: #f7f7f7 !important;
+}
+
+.form-text a{
+  text-decoration: none;
+  color: #ff5e00;
+  font-weight: bold;
+  transition: color .3s;
+}
+
+.form-text a:hover{
+  color: #303030cc !important;
+}
+
+.boton{
+  height:fit-content;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.p-5 .btn:hover{
+  background-color:#fab801 !important;
+}
+
+.pal-hover{
+  border-radius: 5px;
+  transition:background .2s;
+}
+
+.pal-hover:hover{
+  background: #e9ecef;
+}
+
+.carrito{
+  width: 20rem;
+}
+
+.img-portada{
+  height: 200px;
+}
+
+.hide{
+  display: none !important;
+}
+
+.block*{
+  display: block !important;
+}

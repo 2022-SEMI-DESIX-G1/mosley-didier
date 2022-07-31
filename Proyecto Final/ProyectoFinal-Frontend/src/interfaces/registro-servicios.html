@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de servicios </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+    <div class="container d-flex align-items-center justify-content-center mt-5">
+        <form class="col-md-5 bg-light p-4 rounded" id="register-form" action="" method="post" enctype="multipart/form-data">
+            <h3 class="text-muted">Registro de <span class="text-success">Servicio</span></h3>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre del Servicio: </label>
+              <input type="text" class="form-control shadow-sm" id="service-name" placeholder="Desarrollo Web" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Descripccion del servicio</label>
+              <textarea class="form-control" id="service-descripcion" placeholder="Ingresa una descripción de los servicios que ofrece tu empresa." rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Precio del Servicio: </label>
+                <input type="text" class="form-control shadow-sm" id="price" placeholder="12.50" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Tipo de Servicio:</label>
+                <select class="form-select" id="select-option" aria-label="Default select example" required>
+                  <option value="1" selected >Desarrollo Web</option>
+                  <option value="2" selected >Desarrollo Movil</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Imagen de Promocion: </label>
+                <input type="file" class="form-control shadow-sm" id="photo" name="myImage" accept=".jpg">
+            </div>
+            <div id="message"></div>
+            <input type="submit" class="btn btn-success w-100" value="Guardar">
+          </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/resgitro-services.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
